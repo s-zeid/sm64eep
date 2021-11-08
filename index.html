@@ -71,6 +71,19 @@ td > input[type=checkbox]:hover{cursor:pointer;-webkit-filter: opacity(100%) gra
 td > input[type=checkbox]:checked:hover{-webkit-filter: opacity(100%) grayscale(0%) brightness(105%);}
 td > input[type=checkbox]:checked{-webkit-filter:  opacity(100%) grayscale(0%) brightness(92%);}
  .blr{-webkit-filter: blur(2px);}
+
+html, body { display: flex; flex-direction: column; height: 100%; }
+#tw { flex: 1; }
+#clear { clear: both; }
+footer {
+    margin-top: 4px; padding: 12px; text-align: center;
+    background: #162736; color: #fff;
+}
+footer ul { margin: 0; padding: 0; list-style-type: none; }
+footer li { display: inline-block; }
+footer li:not(:last-child)::after { content: " · "; }
+footer a { color: #bdf; text-decoration: none; }
+footer a:hover, footer a:focus { text-decoration: underline; }
     </style>
     <script src=app.js></script>
 </head>
@@ -99,5 +112,16 @@ td > input[type=checkbox]:checked{-webkit-filter:  opacity(100%) grayscale(0%) b
         <div id=left></div><div id=right></div><div id=clear></div>
     </div>
 </div>
+<footer>
+    <ul>
+        <li><a href="https://github.com/s-zeid/sm64eep" target="_blank">Source code</a></li>
+        <li>
+            <a href="https://github.com/bryc/sm64eep" target="_blank">Original</a>
+            by
+            <a href="https://github.com/bryc" target="_blank">bryc</a>
+        </li>
+        <li><a href="https://bryc.github.io/sm64eep/" target="_blank">EEPROM format documentation</a></li>
+    </ul>
+</footer>
     </body>
 </html>
